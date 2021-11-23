@@ -1,0 +1,71 @@
+<h1 class="text-center">Veuillez renseigner vos informations</h1>
+<form action="" method="POST">
+  <div class="row" style="max-width: 100%">
+    <div class="col-lg-6 text-center" style="max-width: 50%">
+      <h1>Données personelles</h1>
+      <label style="margin-top: 1%">Age</label> <br>
+      <input class="mt-auto" type="textarea" name="age" placeholder="age"><br>
+      <label style="margin-top: 1%">Taille (cm)</label><br>
+      <input type="textarea" name="taille" placeholder="taille"><br>
+      <label style="margin-top: 1%">Poid (kg)</label><br>
+      <input type="textarea" name="poid" placeholder="poid"><br>
+      <div>
+        <h2 style="margin-top: 1%">Comorbidités</h2> <br>
+        <div class="row" style="max-width: 100%">
+          <div class="col-lg-8" style="text-align:right; max-width: 50%">
+            <label>Maladies pulmonaires</label> <br>
+            <label>Fatigue chronique</label><br>
+            <label>Problème cardio-vasculaire</label><br>
+            <label>Thrombose</label><br>
+            <label>Diabète</label><br>
+          </div>
+          <div class="col-lg-1" style="text-align:left; max-width: 50%">
+            <input type="checkbox" value="Pulmo"><br>
+            <input type="checkbox" value="Fatigue"><br>
+            <input type="checkbox" value="Cardio"><br>
+            <input type="checkbox" value="Thrombose"><br>
+            <input type="checkbox" value="Diabete"><br>
+
+          </div>
+        </div>
+      </div>
+
+      <label>Statut de vaccination</label>
+      <input type="checkbox" name="vaccination"><br>
+
+    </div>
+    <div class="col-lg-6 text-center" style="max-width: 50%">
+      <h1>Données extérieur</h1>
+      <div>
+        <label>Date d'exposition</label>
+        <input type="date" name="date" placeholder="date">
+        <label>Durée d'exposition (min)</label>
+        <input type="number" name="duree" placeholder="duree">
+      </div>
+      <div>
+        <label>Lieu</label>
+        <select name="aeration" id="aeration-select" >
+          <option value="ouvert">Ouvert</option>
+          <option value="Ferme">Fermé</option>
+        </select>
+        <label>Portiez-vous un masque ?</label>
+        <input type="checkbox" name="user-masque">
+        <label>Le cas positif portait-il un masque ?</label>
+        <input type="checkbox" name="other-masque">
+        <label>Aviez-vous eu des contacts physique ?</label>
+        <input type="checkbox" name="contact">
+        <label>Si non, qu'elle était votre distance avec le cas positif ?</label>
+        <input type="number" name="distance" placeholder="distance">
+      </div>
+      <h1>Lieu</h1>
+      <div>
+        <label>Le contact a t'il eu lieu en ville ou à la campagne ? </label>
+        <select name="lieu" id="lieu" >
+          <option value="ville">Ville</option>
+          <option value="campagne">Campagne</option>
+        </select>
+
+      </div>
+    </div>
+  </div>
+</form>
