@@ -2,7 +2,7 @@ import {Component, OnInit, Output} from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import {HttpClient} from '@angular/common/http'
-
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-form',

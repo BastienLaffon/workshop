@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import {FormsModule} from "@angular/forms";
 import { ResultComponent } from './result/result.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +17,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormComponent,
     routingComponents,
     HomeComponent,
-    ResultComponent
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
