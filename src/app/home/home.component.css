@@ -1,0 +1,34 @@
+.imagesC{
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  animation-duration: 12s;
+  animation-name: mesImages;
+  animation-iteration-count: infinite;
+
+}
+.blabla{
+  margin-left: 30%;
+}
+
+#bilabial{
+  width: 640px;
+  overflow: hidden;
+}
+
+@keyframes mesImages {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-640px);
+  }
+  50% {
+    transform: translateX(-1280px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+
+
+}

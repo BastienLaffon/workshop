@@ -1,88 +1,94 @@
 <!-- Masthead-->
 <header class="">
-  <div class="container position-relative">
-    <div class="row justify-content-center">
-      <div class="col-xl-6">
-
-      </div>
-    </div>
-  </div>
 </header>
 
 
 
 <!-- Call to Action-->
-<section class=" bg-light " id="signup">
-
+<section class="" style="background-color: whitesmoke" id="signup">
   <h1 class="text-center">Veuillez renseigner vos informations</h1>
-  <form action="" method="POST">
-    <div class="row" style="max-width: 100%">
-      <div class="col-lg-6 text-center" style="max-width: 50%">
+  <form #signupForm="ngForm" (ngSubmit)="registerData(signupForm)" href="#result"  style="font-size: 15px">
+    <div class="row form-group" style="max-width: 100%">
+      <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%">
         <h1>Données personelles</h1>
-        <label style="margin-top: 1%">Age</label> <br>
-        <input class="mt-auto" type="textarea" name="age" placeholder="age"><br>
-        <label style="margin-top: 1%">Taille (cm)</label><br>
-        <input type="textarea" name="taille" placeholder="taille"><br>
-        <label style="margin-top: 1%">Poid (kg)</label><br>
-        <input type="textarea" name="poid" placeholder="poid"><br>
+        <div class="form__group field">
+          <label class="control-label form__label" style="margin-top: 1%">Age</label> <br>
+          <input class="mt-auto form__field" type="number" name="age" placeholder="age" ngModel required><br>
+          <label class="control-label form__label" style="margin-top: 1%">Taille (cm)</label><br>
+          <input class="form__field" type="number" name="taille" placeholder="taille" ngModel required><br>
+        <label class="control-label form__label" style="margin-top: 1%">Poid (kg)</label><br>
+        <input class="form__field" type="number" name="poid" placeholder="poid" ngModel required><br>
+       </div>
         <div>
-          <h2 style="margin-top: 1%">Comorbidités</h2> <br>
-          <div class="row" style="max-width: 100%">
-            <div class="col-lg-8" style="text-align:right; max-width: 50%">
-              <label>Maladies pulmonaires</label> <br>
-              <label>Fatigue chronique</label><br>
-              <label>Problème cardio-vasculaire</label><br>
-              <label>Thrombose</label><br>
-              <label>Diabète</label><br>
+          <h2 style="margin-top: 1%; ">Comorbidités</h2> <br>
+          <div class="row" style="max-width: 100%; margin-left: 22%">
+            <div class="col-lg-11 col-md-11 col-sm-11" style="text-align:left; max-width: 50%">
+              <label style="margin-bottom: 0px">Maladies pulmonaires</label> <br>
+              <label style="margin-bottom: 0px">Fatigue chronique</label><br>
+              <label style="margin-bottom: 0px">Problème cardio-vasculaire</label><br>
+              <label style="margin-bottom: 0px">Thrombose</label><br>
+              <label style="margin-bottom: 0px">Diabète</label><br>
             </div>
-            <div class="col-lg-1" style="text-align:left; max-width: 50%">
-              <input type="checkbox" value="Pulmo"><br>
-              <input type="checkbox" value="Fatigue"><br>
-              <input type="checkbox" value="Cardio"><br>
-              <input type="checkbox" value="Thrombose"><br>
-              <input type="checkbox" value="Diabete"><br>
+            <div class="col-lg-1 col-md-1 col-sm-1" style="text-align:left; max-width: 50%">
+              <input type="checkbox" value="Pulmo" name="Pulmo" ngModel ><br>
+              <input type="checkbox" value="Fatigue" name="Fatigue" ngModel ><br>
+              <input type="checkbox" value="Cardio" name="Cardio" ngModel ><br>
+              <input type="checkbox" value="Thrombose" name="Thrombose" ngModel ><br>
+              <input type="checkbox" value="Diabete" name="Diabete" ngModel ><br>
 
             </div>
           </div>
         </div>
 
-        <label>Statut de vaccination</label>
-        <input type="checkbox" name="vaccination"><br>
+
 
       </div>
-      <div class="col-lg-6 text-center" style="max-width: 50%">
+      <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%">
         <h1>Données extérieur</h1>
         <div>
-          <label>Date d'exposition</label>
-          <input type="date" name="date" placeholder="date">
-          <label>Durée d'exposition (min)</label>
-          <input type="number" name="duree" placeholder="duree">
+          <label style="margin-top: 1%"> Date d'exposition</label> <br>
+          <input  style="margin-top: 1%" type="date" name="date" placeholder="date" ngModel required ><br>
+          <label style="margin-top: 1%">Durée d'exposition (min)</label><br>
+          <input style="margin-top: 1%" type="number" name="duration" placeholder="duree" ngModel required><br>
+        </div>
+        <div >
+          <label style="margin-top: 1%">Lieu</label><br>
+          <select style="margin-top: 1%;margin-left: 5%" name="aeration" id="aeration-select" ngModel required>
+            <option value="exterieur">Exterieur</option>
+            <option value="intérieur-a">Interieur Aeree</option>
+            <option value="interieur-na">Interieur Non-Aeree</option>
+          </select><br>
         </div>
         <div>
-          <label>Lieu</label>
-          <select name="aeration" id="aeration-select" >
-            <option value="ouvert">Ouvert</option>
-            <option value="Ferme">Fermé</option>
-          </select>
-          <label>Portiez-vous un masque ?</label>
-          <input type="checkbox" name="user-masque">
-          <label>Le cas positif portait-il un masque ?</label>
-          <input type="checkbox" name="other-masque">
-          <label>Aviez-vous eu des contacts physique ?</label>
-          <input type="checkbox" name="contact">
-          <label>Si non, qu'elle était votre distance avec le cas positif ?</label>
-          <input type="number" name="distance" placeholder="distance">
-        </div>
-        <h1>Lieu</h1>
-        <div>
-          <label>Le contact a t'il eu lieu en ville ou à la campagne ? </label>
-          <select name="lieu" id="lieu" >
-            <option value="ville">Ville</option>
-            <option value="campagne">Campagne</option>
-          </select>
+          <div class ="row" style="margin-top: 10%;  align-content: center">
+            <div class=" col-lg-offset-1 col-lg-8 col-md-8 col-sm-8 " style="text-align:left; max-width: 50%">
+              <label style="margin-bottom: 0px" >Portiez-vous un masque ?</label><br>
+              <label style="margin-bottom: 0px" >Le cas positif portait-il un masque ?</label><br>
+              <label style="margin-bottom: 0px" >Aviez-vous eu des contacts physique ?</label><br>
+              <label style="margin-bottom: 0px" >Statut de vaccination</label>
+            </div>
+         <div class="col-lg-1 col-md-1 col-sm-1" style="text-align:left; max-width: 50%">
+           <input  type="checkbox" name="usermasque" ngModel ><br>
+           <input  type="checkbox" name="othermasque" ngModel ><br>
+           <input  type="checkbox" name="contact" ngModel ><br>
+           <input  type="checkbox" name="vaccination" ngModel ><br>
+
+         </div>
+          </div>
 
         </div>
+        <label disabled="!value.contact" style="margin-top: 1%">En cas d'abcence de contact, quelle était votre distance avec le cas positif ?</label><br>
+        <input style="margin-top: 1%" type="number" name="distance" placeholder="distance" ngModel required><br>
       </div>
+    </div>
+    <div class="row" style="margin: 0" >
+      <div class=" col-lg-offset-10 col-lg-1">
+        <button class="btn-primary" type="submit">Me tester</button>
+      </div>
+    </div>
+    <div id="result" >
+      <app-result *ngIf="isResultTrue" [result]=result></app-result>
     </div>
   </form>
 </section>
+
