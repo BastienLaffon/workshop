@@ -12,7 +12,7 @@ body {
   background-color: #e3e3e3;
 }
 h4 {
-  color: #1c375e;
+  color: #0a58ca;;
 }
 input,
 input[type="radio"] + label,
@@ -33,13 +33,13 @@ select {
 }
 input:focus {
   outline: 0;
-  border-color: #1c375e;
+  border-color: #0a58ca;;
 }
 input:focus + .input-icon i {
-  color: #1c375e;
+  color: #0a58ca;;
 }
 input:focus + .input-icon:after {
-  border-right-color: #1c375e;
+  border-right-color: #0a58ca;;
 }
 input[type="radio"] {
   display: none;
@@ -67,9 +67,9 @@ input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
 select:active {
-  background-color: #1c375e;
+  background-color: #0a58ca;;
   color: #fff;
-  border-color: #1c375e;
+  border-color: #0a58ca;;
 }
 input[type="checkbox"] {
 }
@@ -118,7 +118,7 @@ select:active {
   outline: 0;
 }
 select option {
-  background-color: #1c375e;
+  background-color: #0a58ca;;
   color: #fff;
 }
 .input-group {
@@ -224,8 +224,7 @@ button, button::after {
   width: 200px;
   height: 86px;
   font-size: 22px;
-  font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(45deg, transparent 5%, #1c375e 5%);
+  background: linear-gradient(45deg, transparent 5%, #0a58ca 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -250,8 +249,8 @@ button::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #1c375e 5%);
-  text-shadow: -3px -3px 0px #1c375e, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #0a58ca 5%);
+  text-shadow: -3px -3px 0px #0a58ca, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
 }
 

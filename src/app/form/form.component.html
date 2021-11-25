@@ -78,10 +78,14 @@
     </div>
   </div>
     <div class="row" style="margin: 0" >
-      <div class=" col-lg-offset-10 col-lg-1">
-        <button class="btn-primary" type="submit">Me tester</button>
+      <div class=" col-lg-offset-10 col-lg-2">
+        <button class="btn-primary" type="submit">Estimer(*)</button>
+        <p style="font-size: 10px">(*)Aucune de vos informations ne sera sauvegardé par nos services une fois le résultat calculé</p>
+
       </div>
+
     </div>
+
     <div id="result" >
       <app-result *ngIf="isResultTrue" [result]=result></app-result>
     </div>
