@@ -13,11 +13,11 @@
         <h1>Données personelles</h1>
         <div class="form__group field">
           <label class="control-label form__label" style="margin-top: 1%">Age</label> <br>
-          <input class="mt-auto form__field" type="number" name="age" placeholder="age" ngModel required><br>
+          <input class="mt-auto form__field" type="number" min="0" name="age" placeholder="age" ngModel required><br>
           <label class="control-label form__label" style="margin-top: 1%">Taille (cm)</label><br>
-          <input class="form__field" type="number" name="taille" placeholder="taille" ngModel required><br>
+          <input class="form__field" type="number" min="0" name="taille" placeholder="taille" ngModel required><br>
         <label class="control-label form__label" style="margin-top: 1%">Poid (kg)</label><br>
-        <input class="form__field" type="number" name="poid" placeholder="poid" ngModel required><br>
+        <input class="form__field" type="number" min="0" name="poid" placeholder="poid" ngModel required><br>
        </div>
         <div>
           <h2 style="margin-top: 1%; ">Comorbidités</h2> <br>
@@ -49,13 +49,13 @@
           <label style="margin-top: 1%"> Date d'exposition</label> <br>
           <input  style="margin-top: 1%" type="date" name="date" placeholder="date" ngModel required ><br>
           <label style="margin-top: 1%">Durée d'exposition (min)</label><br>
-          <input style="margin-top: 1%" type="number" name="duration" placeholder="duree" ngModel required><br>
+          <input style="margin-top: 1%" type="number" min="0" name="duration" placeholder="duree" ngModel required><br>
         </div>
         <div >
           <label style="margin-top: 1%">Lieu</label><br>
           <select style="margin-top: 1%;margin-left: 5%" name="aeration" id="aeration-select" ngModel required>
             <option value="exterieur">Exterieur</option>
-            <option value="intérieur-a">Interieur Aeree</option>
+            <option value="interieur-a">Interieur Aeree</option>
             <option value="interieur-na">Interieur Non-Aeree</option>
           </select><br>
         </div>
@@ -78,7 +78,7 @@
 
         </div>
         <label disabled="!value.contact" style="margin-top: 1%">En cas d'abcence de contact, quelle était votre distance avec le cas positif ?</label><br>
-        <input style="margin-top: 1%" type="number" name="distance" placeholder="distance" ngModel required><br>
+        <input style="margin-top: 1%" type="number" min="0" name="distance" placeholder="distance" ngModel required><br>
       </div>
     </div>
     <div class="row" style="margin: 0" >
