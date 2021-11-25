@@ -12,29 +12,29 @@
       <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%">
         <h1>Données personelles</h1>
         <div class="form__group field">
-          <label class="control-label form__label" style="margin-top: 1%">Age</label> <br>
-          <input class="mt-auto form__field" type="number" min="0" name="age" placeholder="age" ngModel required><br>
-          <label class="control-label form__label" style="margin-top: 1%">Taille (cm)</label><br>
-          <input class="form__field" type="number" min="0" name="taille" placeholder="taille" ngModel required><br>
-        <label class="control-label form__label" style="margin-top: 1%">Poid (kg)</label><br>
-        <input class="form__field" type="number" min="0" name="poid" placeholder="poid" ngModel required><br>
+          <label class="control-label form__label cyberpunk" style="margin-top: 1%">Age</label> <br>
+          <input class="mt-auto form__field cyberpunk"  type="number" min="0" name="age" placeholder="Age" ngModel required><br>
+          <label class="control-label form__label cyberpunk" style="margin-top: 1%">Taille (cm)</label><br>
+          <input class="form__field cyberpunk" type="number" min="0" name="taille" placeholder="Taille (cm)" ngModel required><br>
+        <label class="control-label form__label cyberpunk" style="margin-top: 1%">Poids (kg)</label><br>
+        <input class="form__field cyberpunk" type="number" min="0" name="poid" placeholder="Poids (kg)" ngModel required><br>
        </div>
         <div>
           <h2 style="margin-top: 1%; ">Comorbidités</h2> <br>
           <div class="row" style="max-width: 100%; margin-left: 22%">
             <div class="col-lg-11 col-md-11 col-sm-11" style="text-align:left; max-width: 50%">
-              <label style="margin-bottom: 0px">Maladies pulmonaires</label> <br>
-              <label style="margin-bottom: 0px">Fatigue chronique</label><br>
-              <label style="margin-bottom: 0px">Problème cardio-vasculaire</label><br>
-              <label style="margin-bottom: 0px">Thrombose</label><br>
-              <label style="margin-bottom: 0px">Diabète</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px">Maladies pulmonaires</label> <br>
+              <label class="cyberpunk" style="margin-bottom: 0px">Fatigue chronique</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px">Problème cardio-vasculaire</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px">Thrombose</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px">Diabète</label><br>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1" style="text-align:left; max-width: 50%">
-              <input type="checkbox" value="Pulmo" name="Pulmo" ngModel ><br>
-              <input type="checkbox" value="Fatigue" name="Fatigue" ngModel ><br>
-              <input type="checkbox" value="Cardio" name="Cardio" ngModel ><br>
-              <input type="checkbox" value="Thrombose" name="Thrombose" ngModel ><br>
-              <input type="checkbox" value="Diabete" name="Diabete" ngModel ><br>
+              <input class="cyberpunk" type="checkbox" value="Pulmo" name="Pulmo" ngModel ><br>
+              <input class="cyberpunk" type="checkbox" value="Fatigue" name="Fatigue" ngModel ><br>
+              <input class="cyberpunk" type="checkbox" value="Cardio" name="Cardio" ngModel ><br>
+              <input class="cyberpunk" type="checkbox" value="Thrombose" name="Thrombose" ngModel ><br>
+              <input class="cyberpunk" type="checkbox" value="Diabete" name="Diabete" ngModel ><br>
 
             </div>
           </div>
@@ -44,43 +44,39 @@
 
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%">
-        <h1>Données extérieur</h1>
+        <h1>Données extérieures</h1>
         <div>
-          <label style="margin-top: 1%"> Date d'exposition</label> <br>
-          <input  style="margin-top: 1%" type="date" name="date" placeholder="date" ngModel required ><br>
-          <label style="margin-top: 1%">Durée d'exposition (min)</label><br>
-          <input style="margin-top: 1%" type="number" min="0" name="duration" placeholder="duree" ngModel required><br>
+          <label class="cyberpunk" style="margin-top: 1%">Durée d'exposition (min)</label><br>
+          <input  class="cyberpunk" style="margin-top: 1%" type="number" min="0" name="duration" placeholder="Durée" ngModel required><br>
         </div>
         <div >
-          <label style="margin-top: 1%">Lieu</label><br>
+          <label class="cyberpunk" style="margin-top: 1%">Lieu</label><br>
           <select style="margin-top: 1%;margin-left: 5%" name="aeration" id="aeration-select" ngModel required>
-            <option value="exterieur">Exterieur</option>
-            <option value="interieur-a">Interieur Aeree</option>
-            <option value="interieur-na">Interieur Non-Aeree</option>
+            <option value="exterieur">Extérieur</option>
+            <option value="interieur-a">Intérieur avec fenêtre ouverte</option>
+            <option value="interieur-na">Intérieur avec fenêtre fermée</option>
           </select><br>
         </div>
         <div>
           <div class ="row" style="margin-top: 10%;  align-content: center">
             <div class=" col-lg-offset-1 col-lg-8 col-md-8 col-sm-8 " style="text-align:left; max-width: 50%">
-              <label style="margin-bottom: 0px" >Portiez-vous un masque ?</label><br>
-              <label style="margin-bottom: 0px" >Le cas positif portait-il un masque ?</label><br>
-              <label style="margin-bottom: 0px" >Aviez-vous eu des contacts physique ?</label><br>
-              <label style="margin-bottom: 0px" >Statut de vaccination</label>
+              <label class="cyberpunk" style="margin-bottom: 0px" >Vous portiez un masque</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px" >Le cas positif portait un masque</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px" >Contacts physique avec le cas positif</label><br>
+              <label class="cyberpunk" style="margin-bottom: 0px" >Vacciné avec 2 doses</label>
             </div>
          <div class="col-lg-1 col-md-1 col-sm-1" style="text-align:left; max-width: 50%">
-           <input  type="checkbox" name="usermasque" ngModel ><br>
-           <input  type="checkbox" name="othermasque" ngModel ><br>
-           <input  type="checkbox" name="contact" ngModel ><br>
-           <input  type="checkbox" name="vaccination" ngModel ><br>
-
+           <input  class="cyberpunk" type="checkbox" name="usermasque" ngModel ><br>
+           <input class="cyberpunk" type="checkbox" name="othermasque" ngModel ><br>
+           <input class="cyberpunk" type="checkbox" name="contact" ngModel ><br>
+           <input class="cyberpunk" type="checkbox" name="vaccination" ngModel ><br>
          </div>
-          </div>
-
         </div>
-        <label disabled="!value.contact" style="margin-top: 1%">En cas d'abcence de contact, quelle était votre distance avec le cas positif ?</label><br>
-        <input style="margin-top: 1%" type="number" min="0" name="distance" placeholder="distance" ngModel required><br>
       </div>
+      <label class="cyberpunk" disabled="!value.contact" style="margin-top: 1%">En cas d'abcence de contact, indiquez votre distance minimum avec le cas positif</label><br>
+      <input  class="cyberpunk" style="margin-top: 1%" type="number" min="0" name="distance" placeholder="Distance (m)" ngModel required><br>
     </div>
+  </div>
     <div class="row" style="margin: 0" >
       <div class=" col-lg-offset-10 col-lg-1">
         <button class="btn-primary" type="submit">Me tester</button>

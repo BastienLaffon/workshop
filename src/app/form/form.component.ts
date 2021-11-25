@@ -89,7 +89,6 @@ export class FormComponent implements OnInit {
           "cardio": form.value.Cardio,
           "thrombose": form.value.Thrombose,
           "diabete": form.value.Diabete,
-          "date": form.value.date,
           "duree": form.value.duration,
           "lieu": form.value.aeration,
           "user-masque": form.value.usermasque,
