@@ -106,10 +106,10 @@ body {
   }
 }
 .cyberpunk {
-  border: 30px solid #1c375e;
-  border-left: 5px solid #1c375e;
-  border-right: 5px solid #1c375e;
-  border-bottom: 15px solid #1c375e;
-  background-color: #1c375e;
+  border: 30px solid #0a58ca;
+  border-left: 5px solid #0a58ca;
+  border-right: 5px solid #0a58ca;
+  border-bottom: 15px solid #0a58ca;
+  background-color: #0a58ca;
   clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px)  calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px  calc(100% - 0px), 0% calc(100% - 10px));
 }
