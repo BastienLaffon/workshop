@@ -103,7 +103,8 @@ export class FormComponent implements OnInit {
       })
         .toPromise()
         .then(response => {
-          console.log(response);
+          console.log(response.body);
+          this.result = response.body;
         })
         .catch(console.log);
     }
