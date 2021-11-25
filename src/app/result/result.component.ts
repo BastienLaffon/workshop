@@ -7,9 +7,28 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 @Input() result: any;
-  constructor() { }
+
+
+
+
+  constructor() {
+
+  }
+
 
   ngOnInit(): void {
+    this.showMessageSuccess()
   }
+  showMessageSuccess(){
+
+    setTimeout(()=>{
+      document.getElementById("lds-roller").style.display="none";
+      document.getElementById("test").style.display="";
+      document.getElementById("test1").style.display="";
+
+    },4000);
+
+  }
+
 
 }

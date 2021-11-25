@@ -1,7 +1,9 @@
-<div class="hero-image" style="margin-top: 15%; background-color: whitesmoke" >
+<div (load)="showMessageSuccess" class="hero-image" style="margin-top: 15%; background-color: whitesmoke" >
   <div class="hero-text">
-    <h3>Vous avez des chances d'être positif à:</h3>
-    <h1 *ngIf="result != ''"  style="font-size:50px">{{result}} %</h1>
+    <div  id="lds-roller" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+    <h2 id="test1" style="display: none">Vous avez des chances d'être positif à:</h2>
+    <h1  id="test" *ngIf="!(result =='')"  style="font-size:50px; display: none">{{result}} %</h1>
 
   </div>
 </div>
