@@ -22,9 +22,9 @@ export class ResultComponent implements OnInit {
   showMessageSuccess(){
 
     setTimeout(()=>{
-      document.getElementById("lds-roller").style.display="none";
-      document.getElementById("test").style.display="";
-      document.getElementById("test1").style.display="";
+      document.getElementById("lds-roller")!.style.display="none";
+      document.getElementById("test")!.style.display="";
+      document.getElementById("test1")!.style.display="";
 
     },4000);
 
