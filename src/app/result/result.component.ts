@@ -25,8 +25,10 @@ export class ResultComponent implements OnInit {
       document.getElementById("lds-roller")!.style.display="none";
       document.getElementById("test")!.style.display="";
       document.getElementById("test1")!.style.display="";
+      document.getElementById("box")!.classList.add("cyberpunk");
 
-    },4000);
+
+    },3000);
 
   }
 
