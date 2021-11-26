@@ -9,7 +9,7 @@
   <h1 class="text-center">Veuillez renseigner vos informations</h1>
   <form #signupForm="ngForm" (ngSubmit)="registerData(signupForm)" href="#result"  style="font-size: 15px">
     <div class="row form-group" style="max-width: 100%">
-      <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%">
+      <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="max-width: 50%; border-right: solid 1px #0a58ca;">
         <h1>Données personelles</h1>
         <div class="form__group field">
           <label class="control-label form__label cyberpunk" style="margin-top: 1%">Age</label> <br>
@@ -78,12 +78,16 @@
     </div>
   </div>
     <div class="row" style="margin: 0" >
-      <div class=" col-lg-offset-10 col-lg-2">
-        <button class="btn-primary" type="submit">Estimer(*)</button>
-        <p style="font-size: 10px">(*)Aucune de vos informations ne sera sauvegardé par nos services une fois le résultat calculé</p>
+      <div class=" col-lg-offset-8 col-lg-1">
+        <button class="btn  btn-1 btn-primary active " type="submit"   style="background-color: #0a58ca; border-color: #0a58ca"
+                routerLink="./home">
+          Estimer(*)</button>
 
       </div>
+  <div class=" col-lg-offset-8 col-lg-4">
+    <p style="font-size: 10px">(*)Aucune de vos informations ne sera sauvegardé par nos services une fois le résultat calculé</p>
 
+  </div>
     </div>
 
     <div id="result" >
